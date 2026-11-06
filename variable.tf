@@ -10,5 +10,11 @@ variable "default_tag" {
   default = {
     Name        = "My bucket"
     Environment = "Dev"
+    iac         = "terraform"
   }
+}
+
+variable "bucket_version" {
+  type = string
+  default = "Enabled"
 }
